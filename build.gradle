@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.alfabank'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.2.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+}
+
+test {
+    useJUnitPlatform()
+}
